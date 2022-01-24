@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Open+Sans:wght@400;500&display=swap');
+
+:root {
+    --purple: #694CB3;
+    --light: #fffef9;
+--display: 'Mali', cursive;
+--body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body);
+}
+
+html {
+    font-size: 100%;
+  }
+
+img {
+    width: auto;
+    height: auto;
+}
+
+button {
+background-color: var(--purple);
+color: var(--light);
+font-family: var(--display);
+font-weight: 600;
+margin: auto;
+display: block;
+padding: 2vh 3vw;
+text-transform: uppercase;
+border-radius: 50px;
+box-shadow: none;
+border: 5px solid var(--purple);
+font-size: 1rem;
+position: absolute;
+bottom: 2vh;
+left: 50%;
+-ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+h1 {
+    font-family: var(--display);
+    text-transform: uppercase;
+    color: var(--purple);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+body {
+background-image: url(media/BG.svg);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+max-height: 100vh;
+overflow-y: hidden;
+background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+    background-color: rgba(255, 254, 249, 0.5);
+}
+
+.logo, .recipe-icon {
+    height: 5vh;
+}
+
+.recipe-icon {
+    cursor: pointer;
+}
+
+.box {
+    background: var(--light);
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    -webkit-box-shadow: 9px 8px 15px 2px rgba(0,0,0,0.15); 
+box-shadow: 9px 8px 15px 2px rgba(0,0,0,0.15);
+}
+
+.box>p {
+    margin: 3vh 5vw 0;
+}
+
+.cross {
+    height: 3.5vh;
+    cursor: pointer;
+    position: relative;
+  float: right;
+  margin: 1rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.steps>p {
+    background-color: var(--light);
+    color: var(--purple);
+    font-family: var(--display);
+    font-weight: 600;
+    border: 5px solid var(--purple);
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 1vw;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+}
+
+.steps>.inactive {
+    filter: saturate(0);
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-image: url(media/BG-tablet.svg);}
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-image: url(media/BG-mobile.svg);}
+}

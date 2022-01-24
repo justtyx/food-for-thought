@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68.03" height="68.03" viewBox="0 0 68.03 68.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #694cb3;
+      }
+    </style>
+  </defs>
+  <g id="Layer_5" data-name="Layer 5">
+    <g>
+      <rect class="cls-1" x="-10.98" y="26.52" width="90" height="15" rx="7.5" transform="translate(-14.09 34.02) rotate(-45)"/>
+      <rect class="cls-1" x="-10.98" y="26.52" width="90" height="15" rx="7.5" transform="translate(34.02 -14.09) rotate(45)"/>
+    </g>
+  </g>
+</svg>
