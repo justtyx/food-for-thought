@@ -84,7 +84,7 @@ nav {
     cursor: pointer;
 }
 
-.box {
+.box, .box-two {
     background: var(--light);
     height: 50vh;
     width: 50vw;
@@ -99,7 +99,7 @@ nav {
 box-shadow: 9px 8px 15px 2px rgba(0,0,0,0.15);
 }
 
-.box-text {
+.box-text, .box-text-two {
     margin-top: 5vh;
 }
 
@@ -124,19 +124,19 @@ box-shadow: 9px 8px 15px 2px rgba(0,0,0,0.15);
   margin: 1rem;
 }
 
-.plates {
+.plates, .plates-two {
     display: flex;
     justify-content: center;
     margin: 5vh 0 0;
 }
 
-.plate {
+.plate, .plate-two {
     margin: 0 1vw;
     width: 90px;
     cursor: pointer;
 }
 
-.plate:hover {
+.plate:hover, .plate-two:hover {
     opacity: 0.8;
 }
 
