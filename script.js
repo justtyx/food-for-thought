@@ -42,15 +42,13 @@ function loadText(text) {
 
     function changeText() {
 
-        if (i < 7) {
         boxText.classList.add('fade-out');
         boxHeading.innerHTML = text[i].heading;
         boxBody.innerHTML = text[i].body;
         boxText.classList.add('fade-in');
         i++;
         // console.log(i);
-    } else if (i === 7) {
-            console.log('hey');
+    if (i === 7) {
             boxHeading.innerHTML = text[6].heading;
             boxBody.innerHTML = text[6].body;
             theButton.innerHTML = 'Play a game';
