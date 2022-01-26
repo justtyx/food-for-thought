@@ -29,15 +29,21 @@
                     </p>
                     <div class="pyramid-game-hidden hidden">
                         <div class="pyramid-game">
-                            <div class="pyramid">
-                                <div class="shelf-6">Shelf 6</div>
-                                <div class="shelf-5">Shelf 5</div>
-                                <div class="shelf-4">Shelf 4</div>
-                                <div class="shelf-3">Shelf 3</div>
-                                <div class="shelf-2">Shelf 2</div>
-                                <div class="shelf-1">Shelf 1</div>
+                            <div class="pyramid droppable-elements">
+                                <div class="shelf-6 shelf" data-draggable-class="item-shelf-6"><span>Shelf 6</span>
+                                </div>
+                                <div class="shelf-5 shelf" data-draggable-class="item-shelf-5"><span>Shelf 5</span>
+                                </div>
+                                <div class="shelf-4 shelf" data-draggable-class="item-shelf-4"><span>Shelf 4</span>
+                                </div>
+                                <div class="shelf-3 shelf" data-draggable-class="item-shelf-3"><span>Shelf 3</span>
+                                </div>
+                                <div class="shelf-2 shelf" data-draggable-class="item-shelf-2"><span>Shelf 2</span>
+                                </div>
+                                <div class="shelf-1 shelf" data-draggable-class="item-shelf-1"><span>Shelf 1</span>
+                                </div>
                             </div>
-                            <div class="food-item-img"></div>
+                            <div class="food-item-img draggable-elements"></div>
                         </div>
                     </div>
                     <div class="recipe-box recipe-hidden hidden">
@@ -64,7 +70,7 @@
         </div>
     </main>
     <footer></footer>
-    <template class="food-pyramid-img"><img src="" alt="" class="pyramid-items"></template>
+    <template class="food-pyramid-img"><img src="" alt="" class="pyramid-items draggable" draggable="true"></template>
     <script src="script.js"></script>
 </body>
 

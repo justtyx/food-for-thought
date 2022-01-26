@@ -201,6 +201,49 @@ box-shadow: 9px 8px 15px 2px rgba(0,0,0,0.15);
   cursor: move;
 }
 
+.draggable {
+  transition: opacity 0.2s;
+}
+
+.draggable:hover {
+  opacity: 0.5;
+}
+
+.droppable span {
+  font-size: 1.25rem;
+  pointer-events: none; /* The element is never the target of pointer events */
+}
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+  opacity: 0.5;
+}
+
+/* .droppable.dropped {
+  border-style: solid;
+  color: #fff;
+} */
+
+/* .droppable.dropped span {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+} */
+.droppable.dropped img {
+  pointer-events: none;
+}
+
+.draggable.dragged {
+  /* user-select: none;
+  opacity: 0.1;
+  cursor: default; */
+  display: none;
+}
+
+.draggable.dragged:hover {
+  opacity: 0.1;
+}
+
 .shelf-6 {
     width: 0; 
     height: 0; 
