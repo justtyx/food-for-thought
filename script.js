@@ -33,21 +33,23 @@ fetch(`https://spring21-427e.restdb.io/rest/fft-text`, {
 
 // intro continue btn
 
+
 function loadText(text) {
     console.log(text);
 
     theButton.addEventListener('click', changeText);
+
     
     let i = 0;
 
     function changeText() {
 
-        boxText.classList.add('fade-out');
-        boxHeading.innerHTML = text[i].heading;
-        boxBody.innerHTML = text[i].body;
-        boxText.classList.add('fade-in');
-        i++;
-        // console.log(i);
+      boxText.classList.add('fade-out');
+      boxHeading.innerHTML = text[i].heading;
+      boxBody.innerHTML = text[i].body;
+      boxText.classList.add('fade-in');
+      i++;
+      // console.log(i);
     if (i === 7) {
             boxHeading.innerHTML = text[6].heading;
             boxBody.innerHTML = text[6].body;
@@ -55,6 +57,8 @@ function loadText(text) {
 
             theButton.addEventListener('click', openGameOne);
         }
+
+    theButton.innerHTML="Continue"
 }}
 
 
@@ -170,6 +174,11 @@ function drop(event) {
         boxBody.innerHTML="Select a plate to get a recipe."
         document.querySelector('.plates').classList.remove('hidden');
         document.querySelector('.step-two').classList.remove('inactive');
+
+        theButton.addEventListener('click', () => {
+          document.querySelector('.recipe-hidden').classList.add('hidden');
+          theBox.classList.add('hidden');
+        })
     })
 }
 
@@ -202,8 +211,10 @@ function showRecipe(recipes) {
         document.querySelector('.recipe-steps').innerHTML = recipes[randRecipe].recipe;
         document.querySelector('.reference>span').innerHTML = recipes[randRecipe].link;
         document.querySelector('.reference>span').setAttribute("href", "recipes[randRecipe].link");
-        theButton.addEventListener('click', toggleBox);
+        theButton.addEventListener('click', () => {
+          document.querySelector('.recipe-hidden').classList.add('hidden');
+          theBox.classList.add('hidden');
+        });
     })
 }
 
-//open theme 2
